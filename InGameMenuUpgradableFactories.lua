@@ -46,7 +46,16 @@ function InGameMenuUpgradableFactories:onButtonUpgrade()
             args=prodpoint
         })
     else
-        g_gui:showInfoDialog({text = self.l10n:getText(ShopConfigScreen.L10N_SYMBOL.NOT_ENOUGH_MONEY_BUY)})
+        -- g_gui:showInfoDialog({text = self.l10n:getText(ShopConfigScreen.L10N_SYMBOL.NOT_ENOUGH_MONEY_BUY)})
+		local text2 = string.format(
+			g_i18n:getText("uf_not_enough_money"),
+			g_i18n:formatMoney(prodpoint.owningPlaceable.upgradePrice),
+			g_i18n:formatMoney(money)
+		)
+		g_gui:showInfoDialog({
+			text = text2,
+			title = self.l10n:getText(ShopConfigScreen.L10N_SYMBOL.NOT_ENOUGH_MONEY_BUY
+		})
         UFInfo("Not enough money")
     end
 end
