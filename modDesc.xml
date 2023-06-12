@@ -170,5 +170,14 @@ Grazie ai collaboratori di github]]>
             <it>La tua produzione è già al massimo livello.</it>
             <tr>Üretiminiz zaten maksimum seviyede.</tr>
         </text>
+		<text name="not_enough_money">
+			<en>Not enough money! Upgrade cost: %s | Balance: %s</en>
+			<fr>Not enough money! Upgrade cost: %s | Balance: %s</fr>
+			<de>Not enough money! Upgrade cost: %s | Balance: %s</de>
+			<ru>У вас не хватает денег! Стоимость улучшения: %s | Баланс: %s</ru>
+			<br>Not enough money! Upgrade cost: %s | Balance: %s</br>
+			<it>Not enough money! Upgrade cost: %s | Balance: %s</it>
+			<tr>Not enough money! Upgrade cost: %s | Balance: %s</tr>
+		</text>
     </l10n>
 </modDesc>
